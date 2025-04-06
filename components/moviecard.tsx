@@ -40,6 +40,9 @@ const MovieCard: React.FC<MovieCardProps> = ({
       displayMovie.title
     )}`;
   };
+
+  const fallbackImageUrl =
+    "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg";
   return (
     <Card className="w-64 m-4 overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
       <div className="relative h-80">
@@ -51,8 +54,7 @@ const MovieCard: React.FC<MovieCardProps> = ({
           className="object-cover w-full h-full"
           onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
             e.currentTarget.onerror = null;
-            e.currentTarget.src =
-              "https://via.placeholder.com/300x450?text=No+Poster";
+            e.currentTarget.src = fallbackImageUrl;
           }}
         />
       </div>
