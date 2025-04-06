@@ -2,13 +2,6 @@ import Movieform from "@/components/form";
 import MovieCard from "@/components/moviecard";
 
 export default function Home() {
-  const movie = {
-    title: "Movie Title",
-    description: "A short description of the movie",
-    year: "2023",
-    genre: "Action, Adventure, Sci-Fi",
-  };
-  // many real dummy movies with data
   const dummyMovies = [
     {
       title: "Inception",

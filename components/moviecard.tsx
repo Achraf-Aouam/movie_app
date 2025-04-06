@@ -17,7 +17,7 @@ interface MovieCardProps {
 
 const MovieCard: React.FC<MovieCardProps> = ({
   movie,
-  loading = false,
+
   apiKey = "d055326b",
 }) => {
   const dummyMovie: Movie = {
