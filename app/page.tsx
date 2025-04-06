@@ -1,6 +1,5 @@
 import Movieform from "@/components/form";
 import MovieCard from "@/components/moviecard";
-import { title } from "process";
 
 export default function Home() {
   const movie = {

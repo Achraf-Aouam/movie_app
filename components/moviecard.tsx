@@ -1,14 +1,7 @@
 "use client";
 
 import React from "react";
-import {
-  Card,
-  CardContent,
-  CardMedia,
-  Typography,
-  Chip,
-  Skeleton,
-} from "@mui/material";
+import { Card, CardContent, CardMedia, Typography, Chip } from "@mui/material";
 
 interface Movie {
   title: string;
